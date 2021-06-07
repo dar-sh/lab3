@@ -1,0 +1,32 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: installation
+  image: python
+  commands:
+  - pip install numpy
+  - pip install python-math
+
+- name: testing
+  image: python
+  commands:
+  - python --version
+
+- name: greeting
+  image: python
+  commands:
+  - python ./hello.py
+
+- name: lisazhu
+  image: python
+  commands:
+  - pip install numpy
+  - python ./lis.py
+  
+ - name: power
+  image: python
+  commands:
+  - pip install python-math
+  - python ./math.py
