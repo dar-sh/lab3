@@ -24,9 +24,3 @@ steps:
   commands:
   - pip install numpy
   - python ./lis.py
-  
- - name: power
-  image: python
-  commands:
-  - pip install python-math
-  - python ./math.py
