@@ -19,7 +19,8 @@ steps:
   commands:
   - python ./hello.py
 
-- name: translator
+- name: date
   image: python
   commands:
-  - python ./translator.py
+  - pip install DateTime
+  - python ./date.py
