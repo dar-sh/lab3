@@ -19,10 +19,7 @@ steps:
   commands:
   - python ./hello.py
 
-- name: lisazhu
+- name: translator
   image: python
   commands:
-  - pip install numpy
-  - pip install graphics
-  - pip install pylab
-  - python ./lis.py
+  - python ./translator.py
